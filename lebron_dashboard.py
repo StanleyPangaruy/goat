@@ -151,7 +151,7 @@ team_bar_metric = reverse_stat_map[team_bar_label]  # Get actual column name
 # Plot grouped bar chart
 fig3, ax3 = plt.subplots(figsize=(12, 6))
 sns.barplot(data=perteam_df, x='Team', y=team_bar_metric, hue='Team', ax=ax3)
-ax3.set_title(f"{team_bar_label} by Team")
+ax3.set_title(f"{team_bar_label} per Team")
 ax3.set_xlabel("Teams")
 ax3.set_ylabel(team_bar_label)
 plt.xticks(rotation=45)
