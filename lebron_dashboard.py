@@ -99,9 +99,9 @@ col7.metric("FG%", f"{career_row['FG%']:.2f}")
 col8.metric("3P%", f"{career_row['3P%']:.2f}")
 col9.metric("FT%", f"{career_row['FT%']:.2f}")
 
-# Expandable table to view all stats in raw form
-with st.expander("📋 View Full Career Summary Data"):
-    st.dataframe(summary_df.transpose().reset_index().rename(columns={'index': 'Statistic', 0: 'Value'}))
+# # Expandable table to view all stats in raw form
+# with st.expander("📋 View Full Career Summary Data"):
+#     st.dataframe(summary_df.transpose().reset_index().rename(columns={'index': 'Statistic', 0: 'Value'}))
 
 
 
